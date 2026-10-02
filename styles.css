@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+:root {
+  --bg: #10131a; --surface: #171b24; --line: #262c3a;
+  --text: #e8eaf0; --muted: #8a92a6; --accent: #7aa2f7;
+}
+html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
+.stApp { background: var(--bg); color: var(--text); }
+header[data-testid="stHeader"] { background: transparent; }
+section[data-testid="stSidebar"] { background: var(--surface) !important; border-right: 1px solid var(--line); }
+
+.hero { padding: 1.5rem 0 1.75rem; max-width: 640px; }
+.hero h1 { font-family: 'Fraunces', serif; font-weight: 600; font-size: 2.6rem; margin: 0 0 .4rem; color: var(--text); }
+.hero p { color: var(--muted); font-size: 1rem; line-height: 1.55; margin: 0; }
+
+.label { color: var(--muted); font-size: .85rem; font-weight: 500; margin-bottom: .6rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line); }
+
+.docinfo { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; padding: .75rem 1rem; margin-top: .8rem; font-size: .88rem; color: var(--muted); line-height: 1.5; }
+.docinfo b { color: var(--text); font-weight: 500; word-break: break-word; }
+
+.empty { color: var(--muted); font-size: .92rem; padding: 1.5rem 0; line-height: 1.6; }
+
+.who { font-size: .75rem; color: var(--muted); margin: 1rem 0 .25rem; }
+.who.user { text-align: right; }
+.bubble { padding: .7rem 1rem; font-size: .93rem; line-height: 1.65; max-width: 88%; border: 1px solid var(--line); }
+.bubble.user { margin-left: auto; background: #1b2336; border-radius: 12px 12px 2px 12px; }
+.bubble.ai { background: var(--surface); border-radius: 12px 12px 12px 2px; }
+.sources { margin-top: .55rem; padding-top: .45rem; border-top: 1px solid var(--line); font-size: .78rem; color: var(--accent); }
+
+.stButton > button, div[data-testid="stFormSubmitButton"] > button { background: var(--accent); color: #0b1020; border: none; border-radius: 6px; font-weight: 500; }
+.stButton > button:hover, div[data-testid="stFormSubmitButton"] > button:hover { background: #95b4f9; color: #0b1020; }
+div[data-testid="stForm"] { border: none; padding: 0; margin-top: 1rem; }
